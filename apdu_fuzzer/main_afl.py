@@ -43,7 +43,7 @@ class SockComm(object):
     Simple socket communication wrapper for client-server comm.
     Supports SOCK_STREAM/SOCK_DGRAM
     """
-    
+
     def __init__(self, server=True):
         self.server = server
         self.s = None
@@ -230,7 +230,7 @@ class Templater(object):
         self.sample_len = self.inp_len
         self.inp_len_b = self.inp_len or 0
         self.inp_len_s = self.inp_len or 0
-        self.gen_h_len = None
+        self.gen_h_len = 0
         self.tpl_b = None
         self.mask_b = None
 
